@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{E5741059-AD4D-40DB-BFF0-A3D57E50B66D}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>TalentPlus.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)DL\ReAuthHandler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DL\TalentDb.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ActivityHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\AzureStorage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\CustomEntry.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\CustomImageButton.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ClippedScrollView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\FixedLabel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\FastGrid.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\DarkIceImage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\DILabel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\IlustrativeLabel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\MyNavigationPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\MenuCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\TabbedIconPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\RoundedBox.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\WrappedTruncatedLabel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\UnileverLabel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ImageResizer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\PagedCarouselPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\RotatedListImageCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ListImageCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\RatingBarControl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\UserHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Utility.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\VideoPlayerView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IReminderService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Activity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ActivityArchive.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ActivityDeclinedOption.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ActivityTheme.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Invitation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ActivityStatistics.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\BaseEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\FeedbackPost.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\NegativeFeedbackPost.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\PendingFeedback.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\SelectedActivity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\TeamMember.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\UserActivityOrder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\UsersViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ActivitiesViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BaseViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TalentPlusApp.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\CameraViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ViewModelLocator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\WhenViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ActivityDeclinedOtherView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ActivityYesView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ActivitiesView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ActivityDetailsView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\FeedbacksViews\FeedbackViewContent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\FeedbacksViews\Easiness.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\FeedbacksViews\CameraPage.xaml.cs">
+      <DependentUpon>CameraPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\FeedbacksViews\Usefullness.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\HomeTabbedView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\HomeView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\BaseView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\HomeViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\HomeMenuItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\BaseModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Color.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\DisclaimerPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\SettingsPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\LoginPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\MeView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\OverviewView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\FeedBackView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ActivityNegativeFeedbackView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\SendMessageView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\LoadingPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\TeamView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\GetReadyView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\VideoPlayView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\WhoView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\WhenView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\SplashView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Globals\Config.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\FeedBackSelectContentView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ImageButton.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\FeedbacksViews\VideoPage.xaml.cs">
+      <DependentUpon>VideoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\VideoViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\FeedbacksViews\TextPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\iOSPopupLayout.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\WhoViewSearch.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\PlaceholderEditor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\CustomScrollView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\TeamViewSearch.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ExploreThemesView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\TPButton.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\TPSwitch.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\IntroView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\TPCircleImage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\TPListView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\FeedbacksViews\CameraPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\FeedbacksViews\VideoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Globals\" />
+  </ItemGroup>
+</Project>

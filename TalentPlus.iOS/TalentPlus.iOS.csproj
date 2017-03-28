@@ -1,0 +1,593 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{E5B4A6E4-CAAA-4E33-BC65-4D8214905BB3}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TalentPlus.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>TalentPlusiOS</AssemblyName>
+    <NuGetPackageImportStamp>ec754612</NuGetPackageImportStamp>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchOptimizePNGs>True</MtouchOptimizePNGs>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchSdkVersion>8.3</MtouchSdkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchDebug>True</MtouchDebug>
+    <CodesignKey>iPhone Developer: Kam Memarzia (LNM89UGXX8)</CodesignKey>
+    <MtouchSdkVersion>8.1</MtouchSdkVersion>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>ARMv7</MtouchArch>
+    <MtouchOptimizePNGs>True</MtouchOptimizePNGs>
+    <MtouchI18n>
+    </MtouchI18n>
+    <IpaPackageName>
+    </IpaPackageName>
+    <CodesignProvision>bc95ff51-ce82-4fef-a997-62e8dcdab2e8</CodesignProvision>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchProfiling>true</MtouchProfiling>
+    <MtouchUseSGen>true</MtouchUseSGen>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <BuildIpa>true</BuildIpa>
+    <CodesignProvision>0d9f08d4-bd26-4cf6-8577-0eb415e1fb5f</CodesignProvision>
+    <CodesignKey>iPhone Distribution: PlayGen Ltd (LZX76JB8F3)</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExifLib">
+      <HintPath>..\packages\ExifLib.PCL.1.0.1\lib\portable-net45+sl50+win+WindowsPhoneApp81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10\ExifLib.dll</HintPath>
+    </Reference>
+    <Reference Include="LocalNotifications.Plugin">
+      <HintPath>..\packages\Xam.Plugin.LocalNotifications.1.0.0.0\lib\Xamarin.iOS10\LocalNotifications.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="LocalNotifications.Plugin.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.LocalNotifications.1.0.0.0\lib\Xamarin.iOS10\LocalNotifications.Plugin.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Polly">
+      <HintPath>..\packages\Polly.2.2.1\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\Polly.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCL">
+      <HintPath>..\packages\SQLitePCL.3.8.7.2\lib\Xamarin.iOS10\SQLitePCL.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCL.Ext">
+      <HintPath>..\packages\SQLitePCL.3.8.7.2\lib\Xamarin.iOS10\SQLitePCL.Ext.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="XLabs.Core">
+      <HintPath>..\packages\XLabs.Core.2.0.5610.2\lib\portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1\XLabs.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="XLabs.Forms">
+      <HintPath>..\packages\XLabs.Forms.2.0.5610.2\lib\Xamarin.iOS10\XLabs.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="XLabs.Forms.iOS">
+      <HintPath>..\packages\XLabs.Forms.2.0.5610.2\lib\Xamarin.iOS10\XLabs.Forms.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="XLabs.Ioc">
+      <HintPath>..\packages\XLabs.IoC.2.0.5610.2\lib\portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1\XLabs.Ioc.dll</HintPath>
+    </Reference>
+    <Reference Include="XLabs.Platform">
+      <HintPath>..\packages\XLabs.Platform.2.0.5610.2\lib\Xamarin.iOS10\XLabs.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="XLabs.Platform.iOS">
+      <HintPath>..\packages\XLabs.Platform.2.0.5610.2\lib\Xamarin.iOS10\XLabs.Platform.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="XLabs.Serialization">
+      <HintPath>..\packages\XLabs.Serialization.2.0.5610.2\lib\portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1\XLabs.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Media.Plugin">
+      <HintPath>..\packages\Xam.Plugin.Media.1.0.0\lib\Xamarin.iOS10\Media.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Media.Plugin.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Media.1.0.0\lib\Xamarin.iOS10\Media.Plugin.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\Xamarin.iOS10\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\Xamarin.iOS10\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Microsoft.WindowsAzure.Mobile.SQLiteStore">
+      <HintPath>..\packages\WindowsAzure.MobileServices.SQLiteStore.1.0.4\lib\portable-win+net45+wp8+wpa81+monotouch+monoandroid\Microsoft.WindowsAzure.Mobile.SQLiteStore.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Mobile">
+      <HintPath>..\packages\WindowsAzure.MobileServices.1.3.2\lib\Xamarin.iOS10\Microsoft.WindowsAzure.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Mobile.Ext">
+      <HintPath>..\packages\WindowsAzure.MobileServices.1.3.2\lib\Xamarin.iOS10\Microsoft.WindowsAzure.Mobile.Ext.dll</HintPath>
+    </Reference>
+    <Reference Include="XLabs.Serialization.JsonNET">
+      <HintPath>..\packages\XLabs.Serialization.JSON.2.0.5610.2\lib\portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1\XLabs.Serialization.JsonNET.dll</HintPath>
+    </Reference>
+    <Reference Include="NGraphics">
+      <HintPath>ext_bin\NGraphics.dll</HintPath>
+    </Reference>
+    <Reference Include="NGraphics.iOS">
+      <HintPath>ext_bin\NGraphics.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Auth.iOS">
+      <HintPath>..\Components\xamarin.auth-1.2.3.1\lib\ios-unified\Xamarin.Auth.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Insights">
+      <HintPath>..\packages\Xamarin.Insights.1.10.4.112\lib\Xamarin.iOS10\Xamarin.Insights.dll</HintPath>
+    </Reference>
+    <Reference Include="PLCrashReporterUnifiedBinding">
+      <HintPath>..\packages\Xamarin.Insights.1.10.4.112\lib\Xamarin.iOS10\PLCrashReporterUnifiedBinding.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.iOS">
+      <HintPath>..\packages\Xamarin.Forms.1.4.3.6376\lib\Xamarin.iOS10\Xamarin.Forms.Platform.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.1.4.3.6376\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\packages\Xamarin.Forms.1.4.3.6376\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\packages\Xamarin.Forms.1.4.3.6376\lib\Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+    <BundleResource Include="Resources\twitter.png" />
+    <BundleResource Include="Resources\twitter%402x.png" />
+    <BundleResource Include="Resources\about.png" />
+    <BundleResource Include="Resources\about%402x.png" />
+    <BundleResource Include="Resources\blog.png" />
+    <BundleResource Include="Resources\blog%402x.png" />
+    <BundleResource Include="Resources\slideout%402x.png" />
+    <BundleResource Include="Resources\slideout.png" />
+    <BundleResource Include="Resources\scott.png" />
+    <BundleResource Include="Resources\refresh.png" />
+    <BundleResource Include="Resources\refresh%402x.png" />
+    <BundleResource Include="Resources\facebook.png" />
+    <BundleResource Include="Resources\facebook%402x.png" />
+    <BundleResource Include="Resources\googleplus.png" />
+    <BundleResource Include="Resources\googleplus%402x.png" />
+    <BundleResource Include="Resources\instagram.png" />
+    <BundleResource Include="Resources\instagram%402x.png" />
+    <BundleResource Include="Resources\twitternav.png" />
+    <BundleResource Include="Resources\twitternav%402x.png" />
+    <BundleResource Include="Resources\activities.png" />
+    <BundleResource Include="Resources\alert_number.png" />
+    <BundleResource Include="Resources\camera.png" />
+    <BundleResource Include="Resources\chevron.png" />
+    <BundleResource Include="Resources\icon_alerts.png" />
+    <BundleResource Include="Resources\icon_notifications.png" />
+    <BundleResource Include="Resources\overview.png" />
+    <BundleResource Include="Resources\pattern_header.png" />
+    <BundleResource Include="Resources\pencil.png" />
+    <BundleResource Include="Resources\playurl.png" />
+    <BundleResource Include="Resources\radio_selected.png" />
+    <BundleResource Include="Resources\radio_unselected.png" />
+    <BundleResource Include="Resources\star_filled.png" />
+    <BundleResource Include="Resources\star_nofilled.png" />
+    <BundleResource Include="Resources\team.png" />
+    <BundleResource Include="Resources\user_icon.png" />
+    <BundleResource Include="Resources\video.png" />
+    <BundleResource Include="Resources\activity_heading_down.png" />
+    <BundleResource Include="Resources\activity_heading_up.png" />
+    <BundleResource Include="Resources\activity_status_bg.png" />
+    <BundleResource Include="Resources\activity_when_bottom.png" />
+    <BundleResource Include="Resources\activity_when_top.png" />
+    <BundleResource Include="Resources\button_background.png" />
+    <BundleResource Include="Resources\activities%402x.png" />
+    <BundleResource Include="Resources\activity_heading_down%402x.png" />
+    <BundleResource Include="Resources\activity_heading_up%402x.png" />
+    <BundleResource Include="Resources\activity_status_bg%402x.png" />
+    <BundleResource Include="Resources\activity_when_bottom%402x.png" />
+    <BundleResource Include="Resources\activity_when_top%402x.png" />
+    <BundleResource Include="Resources\alert_number%402x.png" />
+    <BundleResource Include="Resources\button_background%402x.png" />
+    <BundleResource Include="Resources\camera%402x.png" />
+    <BundleResource Include="Resources\chevron%402x.png" />
+    <BundleResource Include="Resources\icon_alerts%402x.png" />
+    <BundleResource Include="Resources\icon_notifications%402x.png" />
+    <BundleResource Include="Resources\overview%402x.png" />
+    <BundleResource Include="Resources\pattern_header%402x.png" />
+    <BundleResource Include="Resources\pencil%402x.png" />
+    <BundleResource Include="Resources\playurl%402x.png" />
+    <BundleResource Include="Resources\radio_selected%402x.png" />
+    <BundleResource Include="Resources\radio_unselected%402x.png" />
+    <BundleResource Include="Resources\star_filled%402x.png" />
+    <BundleResource Include="Resources\star_nofilled%402x.png" />
+    <BundleResource Include="Resources\team%402x.png" />
+    <BundleResource Include="Resources\user_icon%402x.png" />
+    <BundleResource Include="Resources\video%402x.png" />
+    <BundleResource Include="Resources\Fonts\UnileverIllustrativeTypeBold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\logo.png" />
+    <BundleResource Include="Resources\logo%402x.png" />
+    <BundleResource Include="Resources\Splash_320_480.png" />
+    <BundleResource Include="Resources\Splash_640_960.png" />
+    <BundleResource Include="Resources\Splash_640_1136.png" />
+    <BundleResource Include="Resources\splash_background.png" />
+    <BundleResource Include="Resources\splash_background%402x.png" />
+    <BundleResource Include="Resources\Default.png" />
+    <BundleResource Include="Resources\Default%402x.png" />
+    <BundleResource Include="Resources\activity_icon.png" />
+    <BundleResource Include="Resources\activity_icon%402x.png" />
+    <BundleResource Include="Resources\profile_top_footer.png" />
+    <BundleResource Include="Resources\profile_top_footer%402x.png" />
+    <BundleResource Include="Resources\profile_top_header.png" />
+    <BundleResource Include="Resources\profile_top_header%402x.png" />
+    <BundleResource Include="Resources\splash.png" />
+    <BundleResource Include="Resources\splash%402x.png" />
+    <BundleResource Include="Resources\ico_camera_white.png" />
+    <BundleResource Include="Resources\ico_camera_white%402x.png" />
+    <BundleResource Include="Resources\ico_pencil_white.png" />
+    <BundleResource Include="Resources\ico_pencil_white%402x.png" />
+    <BundleResource Include="Resources\ico_video_white.png" />
+    <BundleResource Include="Resources\ico_video_white%402x.png" />
+    <BundleResource Include="Resources\icon_info_gray.png" />
+    <BundleResource Include="Resources\icon_info_gray%402x.png" />
+    <BundleResource Include="Resources\icon_tick.png" />
+    <BundleResource Include="Resources\icon_tick%402x.png" />
+    <BundleResource Include="Resources\stage_01.png" />
+    <BundleResource Include="Resources\stage_01%402x.png" />
+    <BundleResource Include="Resources\stage_02.png" />
+    <BundleResource Include="Resources\stage_02%402x.png" />
+    <BundleResource Include="Resources\stage_03.png" />
+    <BundleResource Include="Resources\stage_03%402x.png" />
+    <BundleResource Include="Resources\thumbs_up.png" />
+    <BundleResource Include="Resources\thumbs_up%402x.png" />
+    <BundleResource Include="Resources\activities_white.png" />
+    <BundleResource Include="Resources\activities_white%402x.png" />
+    <BundleResource Include="Resources\camera_icon.png" />
+    <BundleResource Include="Resources\volumn_icon.png" />
+    <BundleResource Include="Resources\volumn_icon%402x.png" />
+    <BundleResource Include="Resources\global_icon.png" />
+    <BundleResource Include="Resources\global_icon%402x.png" />
+    <BundleResource Include="Resources\camera_icon%402x.png" />
+    <BundleResource Include="Resources\bolt.png" />
+    <BundleResource Include="Resources\star.png" />
+    <BundleResource Include="Resources\bolt%402x.png" />
+    <BundleResource Include="Resources\arrow_left_icon.png" />
+    <BundleResource Include="Resources\arrow_left_icon%402x.png" />
+    <BundleResource Include="Resources\logo_top.png" />
+    <BundleResource Include="Resources\logo_top%402x.png" />
+    <BundleResource Include="Resources\splash_back_320_480.png" />
+    <BundleResource Include="Resources\splash_back_640_960.png" />
+    <BundleResource Include="Resources\themes.png" />
+    <BundleResource Include="Resources\themes%402x.png" />
+    <BundleResource Include="Resources\ico_light.png" />
+    <BundleResource Include="Resources\ico_light%402x.png" />
+    <BundleResource Include="Resources\ico_mail.png" />
+    <BundleResource Include="Resources\ico_mail%402x.png" />
+    <BundleResource Include="Resources\intro1background.jpg" />
+    <BundleResource Include="Resources\intro1background%402x.jpg" />
+    <BundleResource Include="Resources\intro2background.jpg" />
+    <BundleResource Include="Resources\intro2background%402x.jpg" />
+    <BundleResource Include="Resources\intro3background.jpg" />
+    <BundleResource Include="Resources\intro3background%402x.jpg" />
+    <BundleResource Include="Resources\intro4background.jpg" />
+    <BundleResource Include="Resources\intro4background%402x.jpg" />
+    <BundleResource Include="Resources\intro5background.jpg" />
+    <BundleResource Include="Resources\intro5background%402x.jpg" />
+    <BundleResource Include="Resources\intro6background.jpg" />
+    <BundleResource Include="Resources\intro6background%402x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+    <BundleResource Include="Resources\Fonts\UnileverDINOffcPro.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="iOSReminderService.cs" />
+    <Compile Include="Renderers\DILabelRenderer.cs" />
+    <Compile Include="Renderers\DarkIceImageRenderer.cs" />
+    <Compile Include="Renderers\RoundedBoxRenderer.cs" />
+    <Compile Include="Renderers\TPCircleImageRenderer.cs" />
+    <Compile Include="Renderers\WrappedTruncatedLabelRenderer.cs" />
+    <Compile Include="Renderers\ImageButtonRenderer.cs" />
+    <Compile Include="Renderers\VideoPlayerViewRenderer.cs" />
+    <Compile Include="Renderers\TPSVGImageRenderer.cs" />
+    <Compile Include="Renderers\TPSwitchRenderer.cs" />
+    <Compile Include="Renderers\LoadingViewRenderer.cs" />
+    <Compile Include="Renderers\TPButtonRenderer.cs" />
+  </ItemGroup>
+  <Import Project="..\TalentPlus.Shared\TalentPlus.Shared.projitems" Label="Shared" Condition="Exists('..\TalentPlus.Shared\TalentPlus.Shared.projitems')" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Import Project="..\packages\Xamarin.Forms.1.3.3.6323\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.3.3.6323\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <Import Project="..\packages\Xamarin.Forms.1.4.3.6376\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.4.3.6376\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <ItemGroup>
+    <BundleResource Include="Resources\bottom_notification.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\bottom_notification%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\button_notif_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\button_notif_background%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\header_overview_task.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\small_icons_chevron_down_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\small_icons_chevron_down_green%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\small_icons_chevron_right_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\small_icons_chevron_right_white%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\small_icons_cross_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\small_icons_cross_green%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\small_icons_notification_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\small_icons_notification_green%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\small_icons_tip_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\small_icons_tip_white%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\small_icons_up_chevron_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\small_icons_up_chevron_green%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\task_number.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\task_number%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\top_tip_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\top_tip_background%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\background_feedback_card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\background_feedback_card%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon_camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon_camera%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon_video.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon_video%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon_write.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icon_write%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\small_icons_menu_settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\small_icons_menu_settings%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\clock%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\person%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-60%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-Small%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-Small-40%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Images\colour_wheel.svg" />
+    <EmbeddedResource Include="Resources\Images\piece1.svg" />
+    <EmbeddedResource Include="Resources\Images\piece1_hover.svg" />
+    <EmbeddedResource Include="Resources\Images\piece2.svg" />
+    <EmbeddedResource Include="Resources\Images\piece2_hover.svg" />
+    <EmbeddedResource Include="Resources\Images\piece3.svg" />
+    <EmbeddedResource Include="Resources\Images\piece3_hover.svg" />
+    <EmbeddedResource Include="Resources\Images\piece5.svg" />
+    <EmbeddedResource Include="Resources\Images\piece5_hover.svg" />
+    <EmbeddedResource Include="Resources\Images\piece6.svg" />
+    <EmbeddedResource Include="Resources\Images\piece6_hover.svg" />
+    <EmbeddedResource Include="Resources\Images\piece7.svg" />
+    <EmbeddedResource Include="Resources\Images\piece7_hover.svg" />
+    <EmbeddedResource Include="Resources\Images\piece8.svg" />
+    <EmbeddedResource Include="Resources\Images\piece8_hover.svg" />
+    <EmbeddedResource Include="Resources\Images\piece10_hover.svg" />
+    <EmbeddedResource Include="Resources\Images\piece10.svg" />
+    <EmbeddedResource Include="Resources\Images\piece4.svg" />
+    <EmbeddedResource Include="Resources\Images\piece4_hover.svg" />
+    <EmbeddedResource Include="Resources\Images\activities_icon.svg" />
+    <EmbeddedResource Include="Resources\Images\check_icon.svg" />
+    <EmbeddedResource Include="Resources\Images\cross_icon.svg" />
+    <EmbeddedResource Include="Resources\Images\plus_icon.svg" />
+    <EmbeddedResource Include="Resources\Images\star_icon.svg" />
+    <EmbeddedResource Include="Resources\Images\time_icon.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SVG\SVG.Forms.Plugin.Abstractions\SVG.Forms.Plugin.Abstractions.csproj">
+      <Project>{14C534B6-1984-41A9-A384-D3A5508588E3}</Project>
+      <Name>SVG.Forms.Plugin.Abstractions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="MediaPlugin">
+      <Version>1.0.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="xamarin.auth">
+      <Version>1.2.3.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\arrow_right_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\check_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\activities_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\clock_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\star_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\plus_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cross_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\arrow_right_icon%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\check_icon%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\activities_icon%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\clock_icon%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\star_icon%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\plus_icon%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cross_icon%402x.png" />
+  </ItemGroup>
+</Project>

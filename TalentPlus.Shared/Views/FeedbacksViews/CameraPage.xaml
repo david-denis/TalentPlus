@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TalentPlus.Shared.CameraPage">
+	<ContentPage.Content>
+		<AbsoluteLayout x:Name="MainLayout">
+			<!---<Button Text="Take Picture" Command="{Binding TakePictureCommand}" />
+			<Button Text="Select Image from Picture Library" Command="{Binding SelectPictureCommand}" />
+			<Button Text="Take Video" Command="{Binding TakeVideoCommand}" />
+			<Button Text="Select Video from Picture Library " Command="{Binding SelectVideoCommand}" />
+			<Image Source="{Binding ImageSource}" VerticalOptions="CenterAndExpand" />-->
+			<Image Source="{Binding ImageSource}" VerticalOptions="CenterAndExpand" Aspect="AspectFit" AbsoluteLayout.LayoutBounds="1, 1, 1, 1" AbsoluteLayout.LayoutFlags="All" />
+		</AbsoluteLayout>
+	</ContentPage.Content>
+</ContentPage>
